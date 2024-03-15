@@ -1,6 +1,20 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
 
+const sliderVariants = {
+    initial:{
+        x: 0,
+    },
+    animate:{
+        x:"-220%",
+        transition:{
+            repeat: Infinity,
+            repeatType: "mirror",
+            duration:20,
+        },
+    },
+};
+
 const textVariants = {
     initial:{
         x: -500,
@@ -39,9 +53,9 @@ const Hero = () => {
                     <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt=""/>
                 </motion.div>
             </div>
-            <div className="slidingTextContainer">
+            <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
                 Desarrollador Creador Autodidacta
-            </div>
+            </motion.div>
             <div className="imageContainer">
                 <img src= "/hero.png" alt=""/>
             </div>
