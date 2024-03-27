@@ -1,6 +1,7 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
+import emailjs from '@emailjs/browser';
 
 const variants = {
     initial: {
@@ -21,7 +22,30 @@ const variants = {
 const Contact = () => {
 
     const ref = useRef();
+    const formRef = useRef();
+    const [error, setError] = useState(false);
+    const [success, setSuccess] = useState(false);
+
     const isInView = useInView(ref, {margin:"-100px"});
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+            .sendForm('service_gao1ref', 'template_8z9xhnu', formRef.current, {
+            publicKey: '1M_wi-C8KtuA39Xas',
+            })
+            .then(
+                (result) => {
+                    setSuccess(true)
+                },
+                (error) => {
+                    setError(true)
+                },
+            );
+        };
+
+
 
     return (
         <motion.div className="contact" 
@@ -76,14 +100,19 @@ const Contact = () => {
                 </motion.div>
 
                 <motion.form 
+                    ref={formRef}
+                    onSubmit={sendEmail}
                     initial={{opacity:0}} 
                     whileInView={{opacity:1}} 
                     transition={{delay:4,duration:1}}
                 >
-                    <input type="text" required placeholder="Nombre" />
-                    <input type="email" required placeholder="Email" />
-                    <textarea rows={8} placeholder="Mensaje" />
+                    <input type="text" required placeholder="Nombre" name="name"/>
+                    <input type="email" required placeholder="Email" name="email"/>
+                    <textarea rows={8} placeholder="Mensaje" name="message"/>
                     <button>Enviar</button>
+                    {error && "Error"}
+                    {success && "Success"}
+
                 </motion.form>
             </div>
         </motion.div>    
