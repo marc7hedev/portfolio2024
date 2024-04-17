@@ -34,12 +34,14 @@ const Services = () => {
         // animate="animate"
         // whileInView="animate"
         ref={ref}
-        animate={isInView && "animate"}
+        //animate={isInView && "animate"}
+        animate={"animate"}
     >
         <motion.div className="textContainer" variants={variants}>
             <p>I focus on helping you brand grow<br /> and move forward</p>
             <hr />
         </motion.div>
+        
         <motion.div className="titleContainer" variants={variants}>
             <div className="title">
                 <img src="/people.webp" alt="" />
