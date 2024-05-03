@@ -20,6 +20,7 @@
 
         span{
             font-weight: bold;
+            font-size: 20px; //Eliminar si causa bugs en la versión mobile
             @include mobile{
                 display: none;
             }
