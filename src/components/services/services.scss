@@ -120,6 +120,7 @@
         }
 
         .box{
+            width: 25%; //Añadido para corregir tamaños de los boxes
             padding: 50px;
             border: 0.5px solid gray;
             display: flex;
@@ -131,6 +132,7 @@
                 align-items: center;
                 gap: 20px;
                 padding: 10px;
+                width: 100%;
             }
 
             p{

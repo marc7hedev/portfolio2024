@@ -61,28 +61,28 @@ const Services = () => {
             whileHover={{background: "lightgray", color: "black"}}>
                 <h2>Aplicaciones web</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti saepe officia consequatur delectus ea minima, et mollitia ab, adipisci ad necessitatibus animi neque libero. Hic assumenda accusamus doloremque magnam voluptatibus?
+                    Desarrollo de páginas web.<br />Tiendas en línea (e-commerce).<br/>Aplicaciones basadas en web.<br />Sistemas ERP.
                 </p>
                 <button>Solicitar</button>
             </motion.div>
             <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
                 <h2>Automatizaciones</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti saepe officia consequatur delectus ea minima, et mollitia ab, adipisci ad necessitatibus animi neque libero. Hic assumenda accusamus doloremque magnam voluptatibus?
+                    Implementación de sistemas automatizados que se encarguen de realizar de manera eficiente las tareas repetitivas, mostrando los resultados en Dashboards.
                 </p>
                 <button>Solicitar</button>
             </motion.div>
             <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
                 <h2>Chatbots IA</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti saepe officia consequatur delectus ea minima, et mollitia ab, adipisci ad necessitatibus animi neque libero. Hic assumenda accusamus doloremque magnam voluptatibus?
+                    Asistentes virtuales.<br />Soporte técnico.<br />Agentes de ventas.<br />Chatbots a la medida según tus necesidades.
                 </p>
                 <button>Solicitar</button>
             </motion.div>
             <motion.div className="box" whileHover={{background: "lightgray", color: "black"}}>
                 <h2>Seguridad</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti saepe officia consequatur delectus ea minima, et mollitia ab, adipisci ad necessitatibus animi neque libero. Hic assumenda accusamus doloremque magnam voluptatibus?
+                    Te ayudo a implementar las mejores medidas de seguridad en tus proyectos y plataformas, protegiéndote así de ciber ataques que pueden hacerle mucho daño a tu negocio.
                 </p>
                 <button>Solicitar</button>
             </motion.div>
