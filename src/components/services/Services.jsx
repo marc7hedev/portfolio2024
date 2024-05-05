@@ -38,7 +38,7 @@ const Services = () => {
         animate={"animate"}
     >
         <motion.div className="textContainer" variants={variants}>
-            <p>I focus on helping you brand grow<br /> and move forward</p>
+            <p>Siempre a la vanguardia actualizado<br /> con las nuevas tecnologías</p>
             <hr />
         </motion.div>
         
@@ -46,12 +46,12 @@ const Services = () => {
             <div className="title">
                 <img src="/people.webp" alt="" />
                 <h1>
-                    <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+                    Ideas <motion.b whileHover={{color:"purple"}}>Únicas</motion.b>
                 </h1>
             </div>
             <div className="title">
                 <h1>
-                    <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+                    Para tus <motion.b whileHover={{color:"purple"}}>Proyectos.</motion.b>
                 </h1>
                 <button>MIS SERVICIOS</button>
             </div>
