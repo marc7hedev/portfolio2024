@@ -11,6 +11,7 @@
         align-items: center;
         justify-content: space-between;
         height: 100%;
+        padding: 20px; //Añadido para alineamiento
 
         @include mobile{
             justify-content: flex-end;
@@ -20,7 +21,7 @@
 
         span{
             font-weight: bold;
-            font-size: 20px; //Eliminar si causa bugs en la versión mobile
+            font-size: 15px; //Eliminar si causa bugs en la versión mobile
             @include mobile{
                 display: none;
             }
@@ -33,7 +34,7 @@
         }
 
         img{
-            width: 30px;
+            width: 20px;
         }
         
     }
