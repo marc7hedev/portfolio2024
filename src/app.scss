@@ -1,6 +1,10 @@
 html{
+    //scroll-snap-type: y proximity;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+}
+.home > section{
+    scroll-snap-align: center;
 }
 
 
