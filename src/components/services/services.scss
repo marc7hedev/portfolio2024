@@ -51,8 +51,6 @@
         @include mobile{
             width: 100%;
         }
-
-        
         
         .title{
             display: flex;
@@ -132,7 +130,7 @@
                 align-items: center;
                 gap: 20px;
                 padding: 10px;
-                width: 100%;
+                width: 100%; //Añadido para corregir en mobile
             }
 
             p{

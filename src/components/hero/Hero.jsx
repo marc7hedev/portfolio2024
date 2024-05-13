@@ -26,7 +26,7 @@ const textVariants = {
         transition:{
             duration:1,
             staggerChildren: 0.1,
-        }
+        },
     },
     scrollButton:{
         opacity: 0,
@@ -34,8 +34,8 @@ const textVariants = {
         transition:{
             duration: 2,
             repeat: Infinity,
-        }
-    }
+        },
+    },
 };
 
 const Hero = () => {
@@ -60,8 +60,7 @@ const Hero = () => {
                 <img src= "/hero.png" alt=""/>
             </div>
         </div>
-
-    )
-}
+    );
+};
 
 export default Hero

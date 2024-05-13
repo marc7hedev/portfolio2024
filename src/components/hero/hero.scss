@@ -29,8 +29,8 @@
 
             h2{
                 font-size: 30px;
-                color: rebeccapurple;
-                letter-spacing: 10px;
+                color: purple;
+                letter-spacing: 5px;
             }
             h1{
                 font-size: 88px;
@@ -41,7 +41,7 @@
             }
 
             .buttons{
-                z-index: 999;
+                z-index: 2;
                 button{
                     padding: 20px;
                     border: 1px solid white;
@@ -62,12 +62,10 @@
 
             img{
                 width: 50px;
-                object-fit: cover;
+                // object-fit: cover;
             }
         }
-
     }
-
 
     .imageContainer{
         height: 100%;

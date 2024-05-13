@@ -41,7 +41,7 @@ const Single = ({ item }) => {
 
     const y = useTransform(scrollYProgress, [0,1], [-300, 300]);
 
-    return <section>
+    return (<section>
         <div className="container">
             <div className="wrapper">
                 <div className="imageContainer" ref={ref}>
@@ -54,7 +54,7 @@ const Single = ({ item }) => {
                 </motion.div>
             </div>
         </div>
-    </section>;
+    </section>);
 };
 
 const Portfolio = () => {
@@ -65,7 +65,7 @@ const Portfolio = () => {
         target:ref, 
         offset:["end end","start start"],
     });
-   
+
 
     const scaleX = useSpring(scrollYProgress, {
         stiffness: 100,
@@ -85,7 +85,7 @@ const Portfolio = () => {
             ))}
 
         </div>
-    )
-}
+    );
+};
 
 export default Portfolio

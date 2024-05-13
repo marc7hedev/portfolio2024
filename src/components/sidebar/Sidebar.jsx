@@ -10,7 +10,7 @@ const variants = {
     transition: {
       type:"spring",
       stiffness: 20,
-    }
+    },
   },
   closed: {
     clipPath: "circle(30px at 50px 50px)",
@@ -19,9 +19,8 @@ const variants = {
       type: "spring",
       stiffness: 400,
       damping: 40,
-
-    }
-  }
+    },
+  },
 };
 
 const Sidebar = () => {
@@ -36,7 +35,7 @@ const Sidebar = () => {
       </motion.div>
       <ToggleButton setOpen={setOpen}/>
     </motion.div>
-  )
-}
+  );
+};
 
 export default Sidebar;
