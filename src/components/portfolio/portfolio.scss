@@ -79,14 +79,15 @@
                 }
 
                 h2{
-                    font-size: 72px;
+                    // font-size: 72px;
+                    font-size: 60px;
 
                     @include mobile{
                         font-size: 36px;
                     }
                 }
                 p{
-                    color: gray;
+                    color: rgb(178, 178, 178);
                     font-size: 20px;
 
                     @include mobile{

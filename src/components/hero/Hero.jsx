@@ -7,11 +7,11 @@ const sliderVariants = {
     },
     animate:{
         // x:"-220%" stock animation
-        x:"-800%",
+        x:"-850%",
         transition:{
             repeat: Infinity,
             repeatType: "mirror",
-            duration:20,
+            duration:25,
         },
     },
 };
@@ -55,7 +55,7 @@ const Hero = () => {
                 </motion.div>
             </div>
             <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-                Js NodeJs React PHP SQL Git WP WooC IA
+                Js Sass NodeJs React PHP SQL Git WP WooC IA
             </motion.div>
             <div className="imageContainer">
                 <img src= "/hero.png" alt=""/>
