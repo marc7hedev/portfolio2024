@@ -6,28 +6,45 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
     {
         id:1,
-        title:"React Commerce",
-        img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nulla porro accusantium error nemo delectus pariatur ipsam repudiandae autem ab, dignissimos nam commodi hic consequatur dolorem ad mollitia quos saepe.",
+        title:"Ferremateriales Medina",
+        img: "../../../public/projects/ferremateriales_landin.png",
+        desc: "Landing Page de la tienda 'Ferremateriales Medina', con un diseño propositivo, intuitivo y responsivo. Cuenta con elementos personalizados como marquees, además de contar con formulario de contacto, botón de Whatsapp, integración de mapas, entre otras características.",
+        tools:"#Wordpress #Elementor #Js",
+        link:"https://ferremateriales-medina.com/"
     },
     {
         id:2,
-        title:"Next.js Blog",
-        img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nulla porro accusantium error nemo delectus pariatur ipsam repudiandae autem ab, dignissimos nam commodi hic consequatur dolorem ad mollitia quos saepe.",
+        title:"Ferremateriales Medina",
+        img: "../../../public/projects/ferremateriales_landin.png",
+        desc: "Landing Page de la tienda 'Ferremateriales Medina', con un diseño propositivo, intuitivo y responsivo",
+        tools:"#Wordpress #Elementor #Js",
+        link:"https://ferremateriales-medina.com/"
     },
     {
         id:3,
-        title:"Vanilla Js App",
-        img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nulla porro accusantium error nemo delectus pariatur ipsam repudiandae autem ab, dignissimos nam commodi hic consequatur dolorem ad mollitia quos saepe.",
+        title:"Ferremateriales Medina",
+        img: "../../../public/projects/ferremateriales_landin.png",
+        desc: "Landing Page de la tienda 'Ferremateriales Medina', con un diseño propositivo, intuitivo y responsivo",
+        tools:"#Wordpress #Elementor #Js",
+        link:"https://ferremateriales-medina.com/"
     },
     {
         id:4,
-        title:"Music App",
-        img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nulla porro accusantium error nemo delectus pariatur ipsam repudiandae autem ab, dignissimos nam commodi hic consequatur dolorem ad mollitia quos saepe.",
+        title:"Ferremateriales Medina",
+        img: "../../../public/projects/ferremateriales_landin.png",
+        desc: "Landing Page de la tienda 'Ferremateriales Medina', con un diseño propositivo, intuitivo y responsivo",
+        tools:"#Wordpress #Elementor #Js",
+        link:"https://ferremateriales-medina.com/"
     },
+    {
+        id:5,
+        title:"Ferremateriales Medina",
+        img: "../../../public/projects/ferremateriales_landin.png",
+        desc: "Landing Page de la tienda 'Ferremateriales Medina', con un diseño propositivo, intuitivo y responsivo",
+        tools:"#Wordpress #Elementor #Js",
+        link:"https://ferremateriales-medina.com/"
+    },
+    
 
 ];
 
@@ -50,7 +67,10 @@ const Single = ({ item }) => {
                 <motion.div className="textContainer" style={{ y }}>
                     <h2>{item.title}</h2>
                     <p>{item.desc}</p>
-                    <button>Ver Demo</button>
+                    <p>{item.tools}</p>
+                    <a href={item.link} target="_blank">
+                        <button>Ver Demo</button>
+                    </a>
                 </motion.div>
             </div>
         </div>
