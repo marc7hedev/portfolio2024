@@ -94,6 +94,11 @@
                         font-size: 16px;
                     }
                 }
+                a{
+                    @include mobile{
+                        z-index: 2;
+                    }
+                }
 
                 button{
                     background-color: purple;
