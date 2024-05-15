@@ -32,9 +32,12 @@ const Contact = () => {
         e.preventDefault();
     
         emailjs
-            .sendForm('service_gao1ref', 'template_8z9xhnu', formRef.current, {
-            publicKey: '1M_wi-C8KtuA39Xas',
-            })
+            .sendForm(
+                'service_yq1b4fp',
+                'template_8z9xhnu',
+                formRef.current,
+                "1M_wi-C8KtuA39Xas"
+            )
             .then(
                 (result) => {
                     setSuccess(true)
@@ -111,7 +114,7 @@ const Contact = () => {
                     <textarea rows={8} placeholder="Mensaje" name="message"/>
                     <button>Enviar</button>
                     {error && "Error"}
-                    {success && "Success"}
+                    {success && "Envíado con éxito!"}
 
                 </motion.form>
             </div>
