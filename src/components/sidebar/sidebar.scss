@@ -16,7 +16,8 @@
         left: 0;
         bottom: 0;
         width: 400px;
-        background: white;
+        background: rgb(130, 48, 223);
+        color: white;
 
         @include mobile{
             width: 200px;
