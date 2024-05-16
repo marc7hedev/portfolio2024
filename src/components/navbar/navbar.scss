@@ -37,8 +37,6 @@
         }
         */
 
-
-        
         .social {
             margin: 0;
             list-style: none;
@@ -64,7 +62,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background: rgb(53, 53, 53);
+                    background: rgb(94, 15, 94);
                     text-align: center;
                     transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
                     transition: all 0.4s ease;
@@ -81,7 +79,7 @@
                         left: -10px;
                         height: 100%;
                         width: 10px;
-                        background: rgb(90, 90, 90);
+                        background: rgb(101, 1, 101);
                         transform: rotate(0deg) skewY(-45deg);
                     }
 
@@ -90,7 +88,7 @@
                         left: -5px;
                         height: 10px;
                         width: 100%;
-                        background: rgb(90, 90, 90);
+                        background: purple;
                         transform: rotate(0deg) skewX(-45deg);
                     }
 
@@ -101,49 +99,49 @@
                 }
 
                 &:nth-child(1) a {
-                    color: #3b5999;
+                    color: #1e1e1e;
 
                     &:hover {
-                        background: #3b5999;
+                        background: #575757;
 
                         &::before {
-                            background: #3b5999;
+                            background: #575757;
                         }
 
                         &::after {
-                            background: #3b5999;
+                            background: #575757;
                         }
                     }
                 }
 
                 &:nth-child(2) a {
-                    color: #55acee;
+                    color: #0077B5;
 
                     &:hover {
-                        background: #55acee;
+                        background: #0077B5;
 
                         &::before {
-                            background: #55acee;
+                            background: #0077B5;
                         }
 
                         &::after {
-                            background: #55acee;
+                            background: #0077B5;
                         }
                     }
                 }
 
                 &:nth-child(3) a {
-                    color: #dd4b39;
+                    color: #1e1e1e;
 
                     &:hover {
-                        background: #dd4b39;
+                        background: #575757;
 
                         &::before {
-                            background: #dd4b39;
+                            background: #575757;
                         }
 
                         &::after {
-                            background: #dd4b39;
+                            background: #575757;
                         }
                     }
                 }
