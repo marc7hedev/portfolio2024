@@ -131,7 +131,7 @@
                 }
 
                 &:nth-child(3) a {
-                    color: #1e1e1e;
+                    color: #ffffff;
 
                     &:hover {
                         background: #575757;
@@ -142,22 +142,6 @@
 
                         &::after {
                             background: #575757;
-                        }
-                    }
-                }
-
-                &:nth-child(4) a {
-                    color: #e4405f;
-
-                    &:hover {
-                        background: #e4405f;
-
-                        &::before {
-                            background: #e4405f;
-                        }
-
-                        &::after {
-                            background: #e4405f;
                         }
                     }
                 }
