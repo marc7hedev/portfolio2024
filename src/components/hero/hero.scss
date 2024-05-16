@@ -77,13 +77,13 @@
                 $btn-color: rgb(209, 96, 254);
 
                 .glowbutton {
-                    top: -220%;
+                    top: -230%;
                     left: 5%;
                     @include mobile{
                         top: 0;
                         left: 0;
                     }
-                    border: 0.25em solid $btn-color;
+                    border: 0.15em solid $btn-color;
                     padding: 1em 3em;
                     color: $btn-color;
                     font-size: 15px;
@@ -92,8 +92,8 @@
                     border-radius: 1em;
                     outline: none;
                     box-shadow:
-                        0 0 1em 0.25em $btn-color,
-                        0 0 4em 1em $glow-spread-color,
+                        0 0 1em 0.15em $btn-color,
+                        0 0 4em 0.7em $glow-spread-color,
                         inset 0 0 0.75em 0.25em $btn-color;
                     text-shadow: 0 0 0.5em $btn-color;
                     position: relative;
