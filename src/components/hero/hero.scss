@@ -42,12 +42,14 @@
 
             .buttons{
                 z-index: 2;
+                display: flex;
+                flex-direction: row;
+                justify-content:center;
                 @include mobile{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content:space-between;
                     width: 80%;
                 }
+
+                /*
                 button{
                     padding: 20px;
                     border: 1px solid white;
@@ -67,6 +69,71 @@
                     border: 1px solid purple;
                     transition: 0.5s;
                 }
+                */
+
+                $glow-color: rgb(130, 0, 183);
+                $glow-spread-color: rgb(130, 0, 183);
+                $enhanced-glow-color: rgb(130, 0, 183);
+                $btn-color: rgb(209, 96, 254);
+
+                .glowbutton {
+                    top: -220%;
+                    left: 5%;
+                    @include mobile{
+                        top: 0;
+                        left: 0;
+                    }
+                    border: 0.25em solid $btn-color;
+                    padding: 1em 3em;
+                    color: $btn-color;
+                    font-size: 15px;
+                    font-weight: bold;
+                    background-color: $glow-color;
+                    border-radius: 1em;
+                    outline: none;
+                    box-shadow:
+                        0 0 1em 0.25em $btn-color,
+                        0 0 4em 1em $glow-spread-color,
+                        inset 0 0 0.75em 0.25em $btn-color;
+                    text-shadow: 0 0 0.5em $btn-color;
+                    position: relative;
+                    transition: all 0.3s;
+
+                    &:after {
+                        pointer-events: none;
+                        content: "";
+                        position: absolute;
+                        top: 120%;
+                        left: 0;
+                        height: 80%;
+                        width: 100%;
+                        background-color: $glow-spread-color;
+                        filter: blur(2em);
+                        opacity: 0.7;
+                        transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+                    }
+
+                    &:hover {
+                        color: $glow-color;
+                        background-color: $btn-color;
+                        box-shadow:
+                            0 0 1em 0.25em $btn-color,
+                            0 0 4em 2em $glow-spread-color,
+                            inset 0 0 0.75em 0.25em $btn-color;
+                    }
+
+                    &:active {
+                        box-shadow:
+                            0 0 0.6em 0.25em $btn-color,
+                            0 0 2.5em 2em $glow-spread-color,
+                            inset 0 0 0.5em 0.25em $btn-color;
+                    }
+                }
+
+
+
+
+
             }
 
             img{
