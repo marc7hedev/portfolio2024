@@ -12,11 +12,13 @@
         justify-content: space-between;
         height: 100%;
         padding: 20px; //Añadido para alineamiento
+        padding-left: 100px;
 
         @include mobile{
             justify-content: flex-end;
             padding: 20px;
         }
+
 
 
         span{

@@ -5,11 +5,25 @@
     position: relative;
     height: calc(100vh - 100px);
     background: linear-gradient(180deg, #0c0c1d, #111132);
+    padding: 0 20px; //Añadido padding general
+
+    @include tablet{
+        padding: 0 40px;
+    }
 
     .wrapper{
         max-width: 1366px;
         height: 100%;
         margin: auto;
+        padding: 0 20px;
+
+        @include tablet{
+            padding: 0 40px;
+        }
+        @include desktop{
+            padding: 0; //Reset
+        }
+
 
         .textContainer{
             width: 50%;
@@ -18,14 +32,23 @@
             flex-direction: column;
             justify-content: center;
             gap: 40px;
+            margin: 0 10%; //Margen que alinea el div
 
             @include mobile{
                 height: 35%;
+                // height: auto;
                 width: 100%;
                 gap: 20px;
                 align-items: center;
                 text-align: center;
+                padding: 0 10px;
             }
+
+            @include tablet{
+                width: 50%;
+                margin: 0 auto;
+            }
+
 
             h2{
                 font-size: 30px;
@@ -38,6 +61,10 @@
                 @include mobile{
                     font-size: 36px;
                 }
+
+                @include tablet{
+                    font-size: 48px;
+                }
             }
 
             .buttons{
@@ -49,27 +76,12 @@
                     width: 80%;
                 }
 
-                /*
-                button{
-                    padding: 20px;
-                    border: 1px solid white;
-                    border-radius: 10px;
-                    background-color: transparent;
-                    color: white;
-                    cursor: pointer;
-                    font-weight: 300;
-                    transition: 0.5s;
-                    margin-right: 20px;
-                    @include mobile{
-                        margin-right: 0px;    
-                    }
-                    
+                @include mobile{
+                    width: 80%;
+                    flex-direction: column;
+                    gap: 10px;
                 }
-                button:hover{
-                    border: 1px solid purple;
-                    transition: 0.5s;
-                }
-                */
+
 
                 $glow-color: rgb(130, 0, 183);
                 $glow-spread-color: rgb(130, 0, 183);
@@ -129,9 +141,6 @@
                             inset 0 0 0.5em 0.25em $btn-color;
                     }
                 }
-
-
-
 
 
             }
