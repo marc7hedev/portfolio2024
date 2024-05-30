@@ -87,21 +87,69 @@
 
             }
 
-            button{
-                width: 300px;
-                height: 100px;
+            .button{
+                // width: 300px;
+                // height: 100px;
+                /**
                 border-radius: 50px;
                 background-color: purple;
                 color: ghostwhite;
                 border: none;
                 font-size: 24px;
                 cursor: pointer;
+                **/
+                $border-right: 6px;
+                $text-stroke-color: rgba(255,255,255,0.3);
+                $animation-color: rgb(235, 13, 235);
+                $fs-size: 80px;
+                // margin: 0;
+                // height: auto;
+                background: transparent;
+                // padding: 0;
+                border: none;
+                cursor: pointer;
+                
+                --border-right: #{$border-right};
+                --text-stroke-color: #{$text-stroke-color};
+                --animation-color: #{$animation-color};
+                --fs-size: #{$fs-size};
+                // letter-spacing: 3px;
+                text-decoration: none;
+                font-size: var(--fs-size);
+                font-family: "Arial";
+                position: relative;
+                text-transform: uppercase;
+                color: transparent;
+                -webkit-text-stroke: 1px var(--text-stroke-color);
+
+                .hover-text{
+                    position: absolute;
+                    box-sizing:  border-box;
+                    content: attr(data-text);
+                    color: var(--animation-color);
+                    width: 0%;
+                    inset: 0;
+                    border-right: var(--border-right) solid var(--animation-color);
+                    overflow: hidden;
+                    transition: 0.5s;
+                    -webkit-text-stroke: 1px var(--animation-color);
+
+                }
+
+                &:hover .hover-text{
+                    width: 100%;
+                    filter: drop-shadow(0 0 23px var(--animation-color));
+                }
+
+
+
 
                 @include mobile{
                     font-size: 16px;
                     width: 150px;
                     height: 50px;
                 }
+                
 
             }
         }
