@@ -43,16 +43,16 @@ const Services = () => {
         </motion.div>
         
         <motion.div className="titleContainer" variants={variants}>
-            <div className="title">
+            {/* <div className="title">
                 <img src="/people.webp" alt="" />
                 <h1>
                     Ideas <motion.b whileHover={{color:"purple"}}>Únicas</motion.b>
                 </h1>
-            </div>
+            </div> */}
             <div className="title">
-                <h1>
+                {/* <h1>
                     Para tus <motion.b whileHover={{color:"purple"}}>Proyectos.</motion.b>
-                </h1>
+                </h1> */}
                 <button className="button">
                     <span className="actual-text">&nbsp;SERVICIOS&nbsp;</span>
                     <span className="hover-text" aria-hidden="true">&nbsp;SERVICIOS&nbsp;</span>
