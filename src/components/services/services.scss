@@ -43,13 +43,14 @@
     }
         
     .titleContainer{
-        flex: 2;
+        // flex: 2;
         display: flex;
         flex-direction: column;
         align-items: center;
 
         @include mobile{
             width: 100%;
+            // flex: 1;
         }
         
         .title{
@@ -147,10 +148,11 @@
 
 
                 @include mobile{
-                    font-size: 70px;
+                    font-size: 50px;
                     // width: 150px;
                     // height: 50px;
-                    top: 150%;
+                    top: 20%;
+                    left: 15%;
                 }
                 
 
@@ -158,13 +160,15 @@
         }
     }
     .listContainer{
-        flex: 2;
+        // flex: 1;
         display: flex;
         max-width: 1366px;
         margin: auto;
+        gap: 20px;
 
         @include mobile{
             flex-direction: column;
+            // flex:2;
             width: 100%;
         }
 
@@ -172,21 +176,23 @@
             width: 25%; //Añadido para corregir tamaños de los boxes
             padding: 50px;
             border: 0.5px solid purple;
+            border-radius: 15px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
             @include mobile{
-                border: none;
+                // border: none;
                 align-items: center;
-                gap: 20px;
+                gap: 7px;
                 padding: 10px;
-                width: 100%; //Añadido para corregir en mobile
+                width: 80%; //Añadido para corregir en mobile
+                margin: auto;
             }
 
             p{
                 @include mobile{
-                    display: none;
+                    // display: none;
                 }
             }
 
