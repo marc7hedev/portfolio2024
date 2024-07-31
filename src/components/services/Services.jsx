@@ -37,10 +37,7 @@ const Services = () => {
         //animate={isInView && "animate"}
         animate={"animate"}
     >
-        <motion.div className="textContainer" variants={variants}>
-            <p>Siempre a la vanguardia actualizado<br /> con las nuevas tecnologías</p>
-            <hr />
-        </motion.div>
+        
         
         <motion.div className="titleContainer" variants={variants}>
             {/* <div className="title">
