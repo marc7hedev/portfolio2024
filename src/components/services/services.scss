@@ -115,7 +115,8 @@
                 --fs-size: #{$fs-size};
                 // letter-spacing: 3px;
                 text-decoration: none;
-                font-size: var(--fs-size);
+                // font-size: var(--fs-size);
+                font-size: 150px;
                 // font-family: "Arial";
                 position: relative;
                 text-transform: uppercase;
@@ -145,9 +146,9 @@
 
 
                 @include mobile{
-                    font-size: 16px;
-                    width: 150px;
-                    height: 50px;
+                    font-size: 70px;
+                    // width: 150px;
+                    // height: 50px;
                 }
                 
 
