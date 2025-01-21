@@ -41,7 +41,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className="social-item">
-                        <a className="social-link" href="https://www.linkedin.com/in/marcogonzalezrangel/" target="_blank">
+                        <a className="social-link" href="https://www.linkedin.com/in/marcogonzalez-webdev/" target="_blank">
                             <svg
                                 width="24"
                                 height="24"

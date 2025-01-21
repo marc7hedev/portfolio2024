@@ -73,16 +73,18 @@ const Services = () => {
                 {/* <button>Solicitar</button> */}
             </motion.div>
             <motion.div className="box" whileHover={{borderColor:"purple", boxShadow: "0 0 35px 7px rgba(128, 0, 128, 0.5)", transition: { duration: 0.3 }}}>
-                <h2>Chatbots IA</h2>
+                <h2>Migraciones</h2>
                 <p>
-                    Asistentes virtuales.<br />Soporte técnico.<br />Agentes de ventas.<br />Chatbots a la medida según tus necesidades.
+                    Implementación de procesos ETL (Extract, Transform, Load) para migrar datos de un sistema a otro, sin perder la integridad de la información.
                 </p>
                 {/* <button>Solicitar</button> */}
             </motion.div>
             <motion.div className="box" whileHover={{borderColor:"purple", boxShadow: "0 0 35px 7px rgba(128, 0, 128, 0.5)", transition: { duration: 0.3 }}}>
-                <h2>Seguridad</h2>
+                <h2>Soporte Técnico e Infraestructura IT</h2>
                 <p>
-                    Te ayudo a implementar las mejores medidas de seguridad en tus proyectos y plataformas, protegiéndote así de ciber ataques que pueden hacerle mucho daño a tu negocio.
+                    <br />Gestión de dominios, hosting y certificados SSL.
+                    <br />Optimización de sistemas y redes locales.
+                    <br />Soporte técnico remoto.
                 </p>
                 {/* <button>Solicitar</button> */}
             </motion.div>

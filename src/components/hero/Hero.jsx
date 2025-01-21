@@ -57,7 +57,7 @@ const Hero = () => {
                 </motion.div>
             </div>
             <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-                Js Sass NodeJs React PHP SQL Git Mongo WP WooC
+                NodeJs React NextJs PHP SQL WP WooC
             </motion.div>
             <div className="imageContainer">
                 <img src= "/hero.png" alt=""/>

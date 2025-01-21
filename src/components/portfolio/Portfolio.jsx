@@ -6,14 +6,22 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
     {
         id:1,
-        title:"Ferremateriales Medina",
-        img: "/projects/ferremateriales_landin.png",
-        desc: "Landing Page de la tienda 'Ferremateriales Medina', con un diseño propositivo, intuitivo y responsivo. Cuenta con elementos personalizados como marquees, además de contar con formulario de contacto, botón de Whatsapp, integración de mapas, entre otras características.",
-        tools:"#Wordpress #Elementor #Js",
-        link:"https://ferremateriales-medina.com/"
+        title:"Sistema de automatización de procesos",
+        img: "/projects/diesel-segoviano.png",
+        desc: "(En desarrollo) Diseño y desarrollo de un sistema de automatización de envíos y recepción de correos/documentos para Diesel Segoviano.",
+        tools:"#NextJs #Tailwind #NodeJs #Prisma #PostgreSQL",
+        link:"https://marc7-diesel.vercel.app/"
     },
     {
         id:2,
+        title:"Ferremateriales Medina",
+        img: "/projects/ferremateriales_landin.png",
+        desc: "Landing Page con enfoque responsivo, integración de formulario de contacto funcional, Analytics, optimización SEO básica para mejorar la visibilidad.",
+        tools:"#Wordpress #Elementor #Js #GoogleAnalytics",
+        link:"https://ferremateriales-medina.com/"
+    },
+    {
+        id:3,
         title:"Portafolio personal",
         img: "/projects/portafoliov1.png",
         desc: "Portafolio personal con biografía, ruta de estudio y empleo, sección de tecnologías y servicios, proyectos, comentarios y formulario de contacto, además de contar con modo oscuro y un selector de colores.",
@@ -21,7 +29,7 @@ const items = [
         link:"https://marc7hedev.github.io/portfoliov1/"
     },
     {
-        id:3,
+        id:4,
         title:"Music App",
         img: "/projects/musicplayer.png",
         desc: "Sencilla y minimalista aplicación web de reproductor de música haciendo uso de la API de audio de Javascript.",
@@ -29,7 +37,7 @@ const items = [
         link:"https://marc7hedev.github.io/Minimal-music-player/"
     },
     {
-        id:4,
+        id:5,
         title:"Tacos la Huasteca",
         img: "/projects/tacoslahuasteca.png",
         desc: "Landing Page de taquería, con un diseño simple y responsivo. Cuenta con formulario de contacto, botón de Whatsapp, integración de mapas, entre otras características.",
@@ -37,7 +45,7 @@ const items = [
         link:"https://marc7hedev.github.io/LaHuastecaVeracruzana/"
     },
     {
-        id:5,
+        id:6,
         title:"Password Generator",
         img: "/projects/passwordgen.png",
         desc: "Pequeña aplicación web para generar contraseñas seguras empleando variables como longitud, caracteres alfanuméricos y especiales.",
@@ -45,7 +53,7 @@ const items = [
         link:"https://marc7hedev.github.io/Password-Generator/"
     },
     {
-        id:6,
+        id:7,
         title:"Error Page",
         img: "/projects/errorpage.png",
         desc: "Sencilla y responsiva página de error con una bonita animación y un botón de regreso a la página anterior.",
